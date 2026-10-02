@@ -31,8 +31,6 @@ station_ids <- unique(milestone$station_id)
 
 # telemetry summary
 
-station_id = station_ids[3]
-
 summary_telemetry <- map_dfr(station_ids, \(station_id){
     telemetry <- tbl(con, "telemetry") %>% 
         filter(
@@ -82,5 +80,5 @@ summary_telemetry <- map_dfr(station_ids, \(station_id){
 
 deployment <- left_join(summary_milestone, summary_telemetry, by = "station_id")
 
-dbWriteTable(con, "deployment", deployment, overwrite = TRUE)
+dbWriteTable(con, "deployment", deployment)
 

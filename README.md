@@ -4,7 +4,7 @@
 
 ### Getting started
 
-Raw data from all dives are cleaned and consolidated into a SQL database. All actual data files are shared via a private Google Drive link. By placing `data/` at working directory, you can use scripts `db_init.R` and `vid_metadata.R` to recreate the database.
+Raw data from all dives are cleaned and consolidated into a SQL database. All actual data files are shared via a private Google Drive link. By placing `data/` at working directory, you can use scripts `db_init.R`, `summary.R` and `vid_metadata.R` to recreate the database.
 
 You can manage your database location using `config.yaml`.
 
