@@ -21,5 +21,5 @@ Use `DBI::dbConnect(RSQLite::SQLite(), "msm145_rov.sqlite")` to connect SQLite d
     - `telemetry_raw`: Raw telemetry data from OFOP with minimal data cleaning.
     - `telemetry`: Curated and cleaned telemetry data.
     - `video_file`: Metadata of all video files. 
-- Timestamp is UNIX Epoch and the primary key in all tables. 
+- Timestamp is UNIX Epoch and the primary key in all tables except `deployment` (dive) and `milestone` (station_id and log_concept). 
 - Coordinates from ROV1 (MSM145_25) originate from Ranger2 extracts from DSHIP (see `db_init.R`). All other telemetry data was consolidated from OFOP telemetry protocol. 
