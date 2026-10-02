@@ -1,0 +1,9 @@
+# define your file paths (relative from wd root)
+# see your wd by `getwd()` and set by `setwd()`
+
+path:
+  rov:
+    zip: "data/rov/raw"
+    unzip: "data/rov/metadata"
+    database: "data/database/msm145_rov.sqlite"
+    path_perMin: "data/rov/rds/telemetry_binned_perMin.rds"
